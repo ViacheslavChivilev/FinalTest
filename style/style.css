@@ -1,0 +1,157 @@
+/* GlobalStyles
+----------------------------------*/
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 2.6rem/4rem 'PT Serif', sans-serif;
+    color: black;
+}
+.gridConteiner {
+    padding: 4.5rem 5vw 0;
+}
+
+/* Tagline
+----------------------------------*/
+.gridConteiner h1 {
+    font: 4.8rem/5rem 'Trebuchet MS', sans-serif;
+}
+.gridConteiner h1::before {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 10px;
+    background: #fff;
+    border-left: solid 27px #00993f;
+    border-right: solid 27px #e6001c;
+}
+.gridConteiner h1::after {
+    content: '';
+    display: block;
+    width: 110px;
+    height: 10px;
+    background: #f5f5f5;
+    margin: 1rem 0 2rem;
+}
+
+/* NAV
+----------------------------------*/
+.gridConteiner .navigation {
+    display: flex;
+}
+.gridConteiner .navigation li {
+    padding: 0 1rem;
+}
+.gridConteiner .navigation li a{
+    text-transform: uppercase;
+    color: #cccccc;
+}
+
+/* Main Content
+----------------------------------*/
+.gridConteiner h2 {
+    font: bold 3rem/4rem Trebuchet MS sans-serif;
+    margin: 7.5rem 0 6rem;
+}
+.gridConteiner .content .text {
+    border-top: solid 1px #e0e0e0;
+    border-bottom: solid 1px #e0e0e0;
+    padding: 4.5rem 0;
+}
+
+/* Partners 
+----------------------------------*/
+.gridConteiner .co-work {
+    border: solid 5px #e0cc91;
+    padding: 3rem;
+    margin: 3rem 0 0;
+    
+}
+.gridConteiner .co-work h2 {
+    margin: 0;
+    border-bottom: solid 5px #e0cc91;
+    padding: 0 0 3.5rem;
+}
+.gridConteiner .co-work ul {
+    display: flex;
+    flex-flow: wrap;
+}
+.gridConteiner .co-work ul li {
+    padding: 1rem;
+}
+.gridConteiner .co-work ul li a {
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 4px #bd4f61;
+}
+
+/* Photo
+----------------------------------*/
+.gridConteiner .photo {
+    background: url('../images/photo.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 2rem 0 0;
+    position: relative;
+    padding: 8rem 0 9.5rem;
+}
+.gridConteiner .photo p, span, h6 {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: auto;
+}
+.gridConteiner .photo h6 {
+    font: bold 4.8rem/5.2rem Trebuchet MS sans-serif;
+}
+.gridConteiner .photo p {
+    font: bold 3.2rem/3.6rem Trebuchet MS sans-serif;
+}
+.gridConteiner .photo span {
+    font: 2.6rem/3rem Trebuchet MS sans-serif;
+    display: block;
+    margin: 4rem auto 0;
+    
+}
+.gridConteiner .photo img {
+    margin: 0 auto ;
+    display: block;
+}
+.gridConteiner .photo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    background: rgba(0,0,0,.5);
+   width: 100%;
+    margin: 2rem 0 0;
+    position: relative;
+    padding: 8rem 0 9.5rem;
+    
+}
+/* media min-width:768px
+----------------------------------*/
+@media screen and (min-width:768px) {
+    .gridConteiner h1 {
+        position: relative;
+        text-align: center;
+    }
+    .gridConteiner h1::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    .gridConteiner h1::after {
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        right: 0;
+    }
+    
+}
